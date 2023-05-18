@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-configmap
+data:
+  database_url: mongodb-service #we use the name of the service we created
+
+  #we have to create a configmap firt in the k8s cluster to we can reference it. Which means we create configmap first
