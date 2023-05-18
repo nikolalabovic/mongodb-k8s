@@ -37,7 +37,7 @@ metadata:
   name: mongodb-service #random name
 spec:
   selector:
-    app: mongodb #ovo mora biti isto kao "app:" u labels u deploymentu, kako bi se povezali sa pod-om kroz label
+    app: mongodb
   ports:
     - protocol: TCP
       port: 27017
